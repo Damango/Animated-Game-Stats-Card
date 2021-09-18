@@ -13,7 +13,7 @@
 	background-color: transparent;
 	width: 670px;
 	height: 150px;
-
+	
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -37,6 +37,7 @@
 	height: 115px;
 	border: 1px solid black;
 	display: flex;
+	align-items: center;
 }
 
 .icon-rank-container {
@@ -54,29 +55,71 @@
 	border-radius: 50%;
 	width: 60px;
 	height: 60px;
-	background: url("./veigar\ icon.png");
+	/*background: url("./veigar\ icon.png");*/
+	background-color: black;
 	background-size: cover;
 }
 
 .summoners-lp-container {
-	max-width: 85px;
+	position: relative;
+	
+	padding-left: 0px !important;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .summoners-container {
-	display: flex;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width:53px;
+	height:57px;
+	margin-bottom: 10px;
+	
 
-	flex-wrap: wrap;
 }
 
 .summoner {
 	background-color: gray;
 	width: 25px;
 	height: 25px;
-	margin-right: 6px;
-	margin-bottom: 6px;
+	margin-top: 5px;
+	
+}
+
+.lp-container{
+	background-color: #2ecc71;
+	padding: 8px 10px;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
+}
+
+.cs-gold-container{
+	height: 80px;
+}
+
+.gold-container{
+	background-color: rgb(241, 205, 0);
+	color: white;
+	padding: 6px 8px;
+	font-weight: bold;
+	margin-top: 5px;
+	border-radius: 3px;
 }
 
 .items-container {
+	
+	height: 100%;
+}
+
+.kda-container{
+	
+	height: 80px;
+}
+
+.kda-count-container{
+	
 }
 
 .items-icon-wrapper {
@@ -97,16 +140,35 @@
 
 .players-container {
 	position: relative;
-	left: -10px;
+	
+	
+	min-width: 130px;
+	
+	
+	
+}
 
-	min-width: 150px;
-	display: flex;
-	flex-wrap: wrap;
+.red-side{
+	position: absolute;
+	right: 0px;
+
+	
+	width: 50px;
+	
+}
+
+.blue-side{
+	
+	
+	width: 50px;
+	
+	
+	
 }
 .user-container {
 	position: relative;
-
-	width: 80px;
+	
+	display: inline-block;
 	height: 18px;
 }
 
@@ -143,4 +205,9 @@
 	flex-direction: column;
 	justify-content: space-around;
 	text-align: center;
+}
+
+
+.fa-coins{
+	margin-right: 5px;
 }
