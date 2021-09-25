@@ -24,20 +24,28 @@
 }
 
 .card-tab {
+	position: relative;
+	top: 100px;
 	display: inline-block;
 	padding: 10px 12px;
 	border-left: 1px solid black;
 	border-top: 1px solid black;
+	opacity: 0;
+	transition: 0.3s;
+	
 }
 
 .match-card-container {
 	position: relative;
 	background-color: white;
-	width: 100%;
+	width: 0%;
 	height: 115px;
 	border: 1px solid black;
 	display: flex;
 	align-items: center;
+	transition: 0.5s;
+	
+	overflow: hidden;
 }
 
 .icon-rank-container {
@@ -55,7 +63,7 @@
 	border-radius: 50%;
 	width: 60px;
 	height: 60px;
-	/*background: url("./veigar\ icon.png");*/
+	background: url('./media/veigaricon.png');
 	background-color: black;
 	background-size: cover;
 }
@@ -80,10 +88,11 @@
 }
 
 .summoner {
-	background-color: gray;
+	
 	width: 25px;
 	height: 25px;
 	margin-top: 5px;
+	background-size: cover;
 	
 }
 
@@ -136,6 +145,7 @@
 	height: 20px;
 	display: inline-block;
 	margin-right: 5px;
+	background-size: cover;
 }
 
 .players-container {
@@ -175,8 +185,10 @@
 .user-icon {
 	width: 15px;
 	height: 15px;
-	background-color: gray;
+
 	display: inline-block;
+	background: url('./media/singedicon.png');
+	background-size: cover;
 }
 
 .username {
@@ -186,13 +198,13 @@
 	display: inline-block;
 }
 
-.victory {
+.Victory {
 	background-color: #2ecc71;
 	color: white;
 	font-weight: bold;
 }
 
-.defeat {
+.Defeat {
 	background-color: #e74c3c;
 	color: white;
 	font-weight: bold;
@@ -205,6 +217,8 @@
 	flex-direction: column;
 	justify-content: space-around;
 	text-align: center;
+	opacity: 0;
+	transition: 1.3s;
 }
 
 
